@@ -19,7 +19,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 mongoose.connect("mongodb+srv://efecollins-admin:admin-efecollins-4311404114@cluster0.unuhgl6.mongodb.net/blogDB", {useNewUrlParser: true});
-
+//mongodb+srv://hung19091:1W8h2NUwNGAL2sZ1@cluster0.vk3xpnf.mongodb.net/?retryWrites=true&w=majority
 
 const postSchema = {
   postTitle: String,
