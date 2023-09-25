@@ -1,7 +1,7 @@
 <%- include('partials/header'); %>
 <h1>Home</h1>
 <p><%= homeStartingContent %></p>
-<% console.log(posts) %> 
+<% console.log(posts[1]) %> 
 <% posts.forEach(post => { %>
    <h2><%= post.postTitle %></h2>
    <p class="postBody"><%= _.truncate(post.postBody, {'length': 100, 'omission': ' ...'}) %></p>
