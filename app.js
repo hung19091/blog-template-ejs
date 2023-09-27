@@ -13,6 +13,16 @@ const contactContent = 'You con find me at Google by keywords "大塚宏プロ�
 const composeContent = "Leave me some message?"
 
 const app = express();
+
+// set up rate limiter: maximum of five requests per minute
+const RateLimit = require('express-rate-limit');
+const limiter = RateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // max 100 requests per windowMs
+});
+// apply rate limiter to all requests
+app.use(limiter);
+
 app.locals._ = _
 
 app.set('view engine', 'ejs');
