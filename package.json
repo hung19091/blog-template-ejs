@@ -15,6 +15,6 @@
     "lodash": "^4.17.11",
     "mongoose": "^6.7.0",
     "@express-rate-limit/prettier": "1.1.0",
-		"@express-rate-limit/tsconfig": "1.0.0"
+    "@express-rate-limit/tsconfig": "1.0.0"
   }
 }
